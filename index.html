@@ -2,46 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <div class="modal">
+    <div class="total-score">
+      <h2 class="total-score__title">Your Result</h2>
+      <div class="total-score__result">
+        <p class="result__total-para">76</p>
+        <p class="result__para">of 100</p>
+      </div>
+      <p class="total-score__greating-para">Great</p>
+      <p class="total-score__info-para">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+    <div class="scores">
+      <h2 class="scores__title">Summary</h2>
+      <ul class="scores__score-list list-any">
+        <li class="scores__item">
+          <svg class="scores__icon" width="20" height="20"><use href="./assets/images/symbol-defs.svg#icon-reaction"></use></svg>
+          <p class="scores__discipline-para scores__reaction-para">Reaction</p>
+          <p class="scores__score-para"><span class="scores__span">80</span> / 100</p>
+        </li>
+        <li class="scores__item">
+          <svg class="scores__icon" width="20" height="20"><use href="./assets/images/symbol-defs.svg#icon-memory"></use></svg>
+          <p class="scores__discipline-para scores__memory-para">Memory</p>
+          <p class="scores__score-para"><span class="scores__span">92</span> / 100</p>
+        </li>
+        <li class="scores__item">
+          <svg class="scores__icon" width="20" height="20"><use href="./assets/images/symbol-defs.svg#icon-verbal"></use></svg>
+          <p class="scores__discipline-para scores__verbal-para">Verbal</p>
+          <p class="scores__score-para"><span class="scores__span">61</span> / 100</p>
+        </li>
+        <li class="scores__item">
+          <svg class="scores__icon" width="20" height="20"><use href="./assets/images/symbol-defs.svg#icon-visual"></use></svg>
+          <p class="scores__discipline-para scores__visual-para">Visual</p>
+          <p class="scores__score-para"><span class="scores__span">72</span> / 100</p>
+        </li>
+      </ul>
+      <button class="scores__button" type="button">Continue</button>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Costbound">Dmytro Popovskyi</a>.
   </div>
 </body>
 </html>
