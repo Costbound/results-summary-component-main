@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/resultssummarycomponentmain-sjDnZZg_xU)
 - Live Site URL: [Add live site URL here](https://costbound.github.io/results-summary-component-main/)
 
 ## My process
